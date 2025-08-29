@@ -5,6 +5,9 @@ import RegistroVotante from "./pages/RegistroVotante";
 import Administrador from "./pages/Administrador";
 import Candidatos_adm from "./pages/Candidatos_adm";  
 import Elecciones_adm from "./pages/Elecciones_adm";
+import Votante from "./pages/votante";
+import Elecciones_Votante from "./pages/Elecciones_votante";
+import Candidatos_votante from "./pages/Candidatos_votante"
 
 export default function App() {
  return (
@@ -26,6 +29,9 @@ export default function App() {
       />
       <Route path="/Candidatos_adm" element={<Candidatos_adm/>}></Route>
       <Route path="/Elecciones_adm" element={<Elecciones_adm/>}></Route>
+      <Route path="/Votante" element={<Votante/>}></Route>
+      <Route path="/Elecciones_votante" element={<Elecciones_Votante/>}></Route>
+      <Route path="/Candidatos_votante" element={<Candidatos_votante/>}></Route>
   </Routes>
  )
 } 

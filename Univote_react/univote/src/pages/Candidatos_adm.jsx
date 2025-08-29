@@ -7,7 +7,7 @@ function Candidatos_adm() {
   return (
     <div className="index-page">
       <div className="logo_inicio">
-        <a href="/"><img src="/img/logo.png" alt="Logo" /></a>
+        <a href="/administrador"><img src="/img/logo.png" alt="Logo" /></a>
       </div>
 
       {/* NAVBAR */}
@@ -60,7 +60,7 @@ function Candidatos_adm() {
           </thead>
           <tbody>
             <tr>
-              <td>Manuela Marroqui</td>
+              <td>Manuela Marroquin</td>
               <td>Cedula de cuidadania</td>
               <td>1034287971</td>
               <td>manuela99@uni.edu.co</td>

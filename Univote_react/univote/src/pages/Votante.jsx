@@ -3,27 +3,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../styles.css"; // tu CSS personalizado
 
-
-function Administrador() {
+function Votante() {
     return (
         <div className="index-page">
             <div className="logo_inicio">
-                <a href="/administrador"><img src="/img/logo.png" alt="Logo" /></a>
+                <a href="/votante"><img src="/img/logo.png" alt="Logo" /></a>
             </div>
 
             {/* NAVBAR */}
             <nav className="navbar px-4">
                 <ul className="nav-links d-flex ms-auto">
                     <li className="nav-item">
-                        <a className="nav-link text-white" href="/Elecciones_adm">
-                            <img src="/img/elecciones.png" alt="Elecciones" className="nav-icon" />
+                        <a className="nav-link text-white" href="/Elecciones_votante">
+                            <img src="/img/elecciones_votante.png" alt="Elecciones" className="nav-icon" />
                             Elecciones
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link text-white" href="/Candidatos_adm">
-                            <img src="/img/candidatos.png" alt="Candidatos" className="nav-icon" />
-                            Candidatos
                         </a>
                     </li>
                     <li className="nav-item">
@@ -50,25 +43,17 @@ function Administrador() {
                     <section className="acciones">
                         <div className="card">
                             <h3>Gestión Elecciones</h3>
-                            <p>Crea una nueva elección con fechas y candidatos.</p>
+                            <p>Consulta todas la elecciones que hay en el momento</p>
                             <a href="/Elecciones_adm" className="btn">
-                                Gestionar
+                                Consultar
                             </a>
                         </div>
 
+                    
                         <div className="card">
-                            <h3>Gestión Candidatos</h3>
-                            <p>Edita, agrega o elimina candidatos de la elección.</p>
-                            <a href="/candidatosAdmin" className="btn">
-                                Gestionar
-                            </a>
-                        </div>
-
-                        <div className="card">
-                            <h3>Reportes</h3>
+                            <h3>Resultados</h3>
                             <p>
-                                Una vez cerrada la elección, aquí verás los resultados y podrás
-                                exportarlos.
+                                Una vez finalizada la elección podras ver, los resultados de la misma.
                             </p>
                             <a href="/resultados" className="btn">
                                 Ver Resultados
@@ -82,7 +67,7 @@ function Administrador() {
                             <div className="tarjeta">
                                 <h3>Próxima Elección</h3>
                                 <p>
-                                    La elección de Rector comenzará el <strong>15 de septiembre</strong>. No olvides configurar candidatos.
+                                    La elección de Rector comenzará el <strong>15 de septiembre</strong>. No olvides entrar a votar por tu  candidato favorito.
                                 </p>
                             </div>
 
@@ -95,10 +80,9 @@ function Administrador() {
                             </div>
 
                             <div className="tarjeta">
-                                <h3>Reportes</h3>
+                                <h3>Voto confidencial</h3>
                                 <p>
-                                    Los resultados de la elección de Decanos ya están disponibles en
-                                    la sección de reportes.
+                                    tu voto es libre y secreto, nadie puede obligarte a votar por alguien distinto a tu verdadera elección.
                                 </p>
                             </div>
                         </div>
@@ -114,4 +98,4 @@ function Administrador() {
     )
 };
 
-export default Administrador;
+export default Votante;
